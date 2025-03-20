@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'PrimaryFont';
+    src: url('font/DMSans.ttf') format('truetype');
+    font-weight: 150;
+}
+
+@font-face {
+    font-family: 'PrimaryFontItalic';
+    src: url('font/DMSansItalic.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #353935;
+    --secondary-color: #aaaaaa;
+    --link-color: #146C94;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    padding: 12px 50px;
+
+    font-family: 'PrimaryFont';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    word-spacing: 0.15rem;
+    letter-spacing: 0.05rem;
+}
+
+.sectiongap {
+    height: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.heading .leftinfo {
+    text-align: left;
+}
+
+.heading .rightinfo {
+    text-align: right;
+    margin-top: auto;
+}
+
+.heading .leftinfo #name {
+    font-size: 30px;
+}
+
+.heading .rightinfo #phone {
+    font-family: 18px;
+}
+
+.heading .rightinfo #email a,
+.heading .rightinfo #github a,
+.heading .rightinfo #linkedin a {
+    color: var(--link-color);
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+}
+
+.section .seperator {
+    border-top: 1px solid var(--secondary-color);
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.section h2 {
+    font-size: 22px;
+}
+
+#educationtable {
+    width: 100%;
+    text-align: center;
+
+    border: 1px solid var(--secondary-color);
+    border-collapse: collapse;
+}
+
+#educationtable th,
+#educationtable td {
+    border: 1px solid var(--secondary-color);
+    padding: 7px;
+    text-align: center;
+}
+
+#educationtable th {
+    font-weight: 800;
+    font-size: 19px;
+}
+
+.experiencelist .experiencetitle {
+    font-size: 19px;
+}
+
+.custombullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+    margin-right: 9px;
+}
+
+.experiencelist .experiencecontent {
+    margin-left: 20px;
+}
+
+.experiencelist .techstack,
+.experiencelist .contribution {
+    margin-top: 8px;
+}
+
+.experiencelist .techstack span,
+.experiencelist .contribution span {
+    font-size: 17px;
+    color: black;
+}
+
+.experiencelist .role {
+    color: black;
+}
+
+.experiencelist .institute {
+    font-family: 'PrimaryFontItalic';
+    float: right;
+}
+
+.experiencelist .singlecontribution {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.experiencelist .singlecontribution li {
+    margin: 6px;
+}
+
+.experiencelist .singlecontribution span {
+    font-family: 'PrimaryFontItalic';
+    font-size: 18px;
+}
+
+.experiencelistgap {
+    height: 10px;
+}
+
+.projectcontent {
+    padding-left: 15px;
+}
+
+.projectcontent .title {
+    font-family: 'PrimaryFontItalic';
+    font-size: 18px;
+    margin-left: -10px;
+}
+
+.projectcontent .time {
+    float: right;
+}
+
+.projectcontent .projectinfo {
+    font-family: 'PrimaryFontItalic';
+    margin-top: 4px;
+}
+
+.projectcontent .tools {
+    margin-top: 7px;
+}
+
+.projectcontent .tools span {
+    font-size: 17px;
+    color: black
+}
+
+.projectcontent .list {
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+#skill .list {
+    margin-left: 15px;
+}
+
+#skill .list strong {
+    font-size: 18px;
+    color: black;
+}
